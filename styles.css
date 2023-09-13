@@ -1,0 +1,179 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+/* Solar system container */
+.solar-system {
+    transform-style: preserve-3d;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Sun styles */
+.sun {
+    width: 200px;
+    height: 200px;
+    background-color: #FFD700; /* Yellow sun color */
+    border-radius: 50%;
+    position: relative;
+    animation: rotate-sun 20s infinite linear;
+}
+
+@keyframes rotate-sun {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Planet styles */
+.planet {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+.mercury {
+    background-color: #A9A9A9; /* Gray color for Mercury */
+    transform: translate(-120px) rotateY(0deg);
+    animation: rotate-mercury 10s infinite linear;
+}
+
+@keyframes rotate-mercury {
+    0% {
+        transform: translate(-120px) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-120px) rotateY(360deg);
+    }
+}
+
+.venus {
+    background-color: #FFA07A; /* Orange color for Venus */
+    transform: translate(-170px) rotateY(0deg);
+    animation: rotate-venus 15s infinite linear;
+}
+
+@keyframes rotate-venus {
+    0% {
+        transform: translate(-170px) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-170px) rotateY(360deg);
+    }
+}
+
+.earth {
+    background-color: #6495ED; /* Blue color for Earth */
+    transform: translate(-230px) rotateY(0deg);
+    animation: rotate-earth 20s infinite linear;
+}
+
+@keyframes rotate-earth {
+    0% {
+        transform: translate(-230px) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-230px) rotateY(360deg);
+    }
+}
+
+.mars {
+    background-color: #FF6347; /* Red color for Mars */
+    transform: translate(-290px) rotateY(0deg);
+    animation: rotate-mars 25s infinite linear;
+}
+
+@keyframes rotate-mars {
+    0% {
+        transform: translate(-290px) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-290px) rotateY(360deg);
+    }
+}
+
+.jupiter {
+    background-color: #FFD700; /* Yellow color for Jupiter */
+    transform: translate(-370px) rotateY(0deg);
+    animation: rotate-jupiter 30s infinite linear;
+}
+
+@keyframes rotate-jupiter {
+    0% {
+        transform: translate(-370px) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-370px) rotateY(360deg);
+    }
+}
+
+.saturn {
+    background-color: #FFA500; /* Orange color for Saturn */
+    transform: translate(-440px) rotateY(0deg);
+    animation: rotate-saturn 35s infinite linear;
+}
+
+@keyframes rotate-saturn {
+    0% {
+        transform: translate(-440px) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-440px) rotateY(360deg);
+    }
+}
+
+.uranus {
+    background-color: #00CED1; /* Turquoise color for Uranus */
+    transform: translate(-500px) rotateY(0deg);
+    animation: rotate-uranus 40s infinite linear;
+}
+
+@keyframes rotate-uranus {
+    0% {
+        transform: translate(-500px) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-500px) rotateY(360deg);
+    }
+}
+
+.neptune {
+    background-color: #00008B; /* Dark Blue color for Neptune */
+    transform: translate(-560px) rotateY(0deg);
+    animation: rotate-neptune 45s infinite linear;
+}
+
+@keyframes rotate-neptune {
+    0% {
+        transform: translate(-560px) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-560px) rotateY(360deg);
+    }
+}
